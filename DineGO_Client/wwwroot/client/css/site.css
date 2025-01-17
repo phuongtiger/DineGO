@@ -69,3 +69,82 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+
+
+/* Login CSS - phuonghh - START*/
+#terms{
+  width: 10px;
+  height: 15px;
+}
+.form-check-label{
+  align-content: center;
+  padding-left: 5px;
+}
+
+.register-background,
+.login-background{
+  background-color: #eeeeee;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-container,
+.login-container{
+  display: flex;
+  width: 852px;
+  height: 400px;
+  background-color: white;
+}
+.register-container{
+  height: 590px;
+}
+.register-block,
+.login-block{
+  width: 70%;
+  margin: auto;
+  align-content: center;
+}
+.register-block button,
+.login-block button{
+  width: 100%;
+  border-radius: 0px;
+  border: none;
+  background-color: #d02028;
+  color: white;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+.register-block button:hover,
+.login-block button:hover{
+  background-color: #d02028;
+}
+.register-block input,
+.login-block input{
+  height: auto;
+  color: #222;
+  padding: 17px 20px;
+  border: 1px solid #ebebeb;
+  margin: 20px 0;
+  width: 100%;
+}
+.register-block input:focus,
+.login-block input:focus {
+  outline: none;
+  border: 1px solid #007BFF; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.register-footer,
+.login-footer{
+  padding: 10px 0;
+}
+
+.register-footer a,
+.login-footer a{
+  color: #d02028;
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+/* Login CSS - phuonghh - END */
