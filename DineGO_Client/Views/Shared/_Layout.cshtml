@@ -11,17 +11,22 @@
 </head>
 <body>
     <header>
-      
+     @Html.Partial("_Header")
     </header>
-    <div class="container">
+    <div class="container-fluid ">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-      
+<div class="container-fluid">
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+     @Html.Partial("_Footer")
     </footer>
+</div>
+    
+
+
     <script src="/common/lib/jquery/jquery-3.7.1.min.js"></script>
     <script src="/common/lib/bootstrap/bootstrap.min.js"></script>
     <script src="/common/lib/slider/owl.carousel.min.js"></script>
