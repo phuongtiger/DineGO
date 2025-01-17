@@ -66,6 +66,7 @@ body {
 /* van khoi --footer  */
 .footer-wrapper {
   max-width: 100%;
+  padding: 0 90px;
   background-color: var(--primary-color);
 }
 
