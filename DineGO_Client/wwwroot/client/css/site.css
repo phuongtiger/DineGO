@@ -6,7 +6,7 @@
 }
 
 :root {
-  --primary-color: #d02028;
+  --primary-color: #C0392B;
   --secondary-color: #eeeeee;
   --third-color: white;
 
@@ -75,6 +75,84 @@ body {
   color: var(--third-color);
 }
 
+
+
+/* Login CSS - phuonghh - START*/
+#terms{
+  width: 10px;
+  height: 15px;
+}
+.form-check-label{
+  align-content: center;
+  padding-left: 5px;
+}
+
+.register-background,
+.login-background{
+  background-color: var(--secondary-color);
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-container,
+.login-container{
+  display: flex;
+  width: 852px;
+  height: 400px;
+  background-color: white;
+}
+.register-container{
+  height: 590px;
+}
+.register-block,
+.login-block{
+  width: 70%;
+  margin: auto;
+  align-content: center;
+}
+.register-block button,
+.login-block button{
+  width: 100%;
+  border-radius: 0px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+.register-block button:hover,
+.login-block button:hover{
+  background-color: var(--primary-color);
+}
+.register-block input,
+.login-block input{
+  height: auto;
+  color: #222;
+  padding: 17px 20px;
+  border: 1px solid var(--secondary-color);
+  margin: 20px 0;
+  width: 100%;
+}
+.register-block input:focus,
+.login-block input:focus {
+  outline: none;
+  border: 1px solid #007BFF; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.register-footer,
+.login-footer{
+  padding: 10px 0;
+}
+
+.register-footer a,
+.login-footer a{
+  color: var(--primary-color);
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+/* Login CSS - phuonghh - END */
 .footer p,
 .footer h5,
 .footer li {
