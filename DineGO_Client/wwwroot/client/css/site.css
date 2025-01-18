@@ -8,7 +8,7 @@
 :root {
   --primary-color: #C0392B;
   --secondary-color: #eeeeee;
-  --third-color: #d02028;
+  --white-color: #d02028;
   --white-color: white;
   --black-color: black
 }
@@ -26,19 +26,19 @@ body {
   left: 0;
   z-index: 1000;
   background-color: var(--primary-color);
-  color: var(--third-color);
+  color: var(--white-color);
   position: fixed;
   margin-bottom: 100px;
 }
 
 .navbar {
-  color: var(--third-color);
+  color: var(--white-color);
 }
 
 .navbar .nav-link,
 .navbar .navbar-brand,
 .navbar .btn {
-  color: var(--third-color);
+  color: var(--white-color);
   font-size: 14px;
   font-weight: bold;
 }
@@ -50,7 +50,7 @@ body {
 
 .nav-link:hover {
   color: var(--primary-color);
-  background-color: var(--third-color);
+  background-color: var(--white-color);
   border: 1px solid var(--primary-color);
   border-radius: 5px;
   padding: 10px 20px;
@@ -70,7 +70,7 @@ body {
 
 .footer {
   background-color: var(--primary-color);
-  color: var(--third-color);
+  color: var(--white-color);
 }
 
 
@@ -154,7 +154,7 @@ body {
 .footer p,
 .footer h5,
 .footer li {
-  color: var(--third-color);
+  color: var(--white-color);
   margin: 0;
 }
 
