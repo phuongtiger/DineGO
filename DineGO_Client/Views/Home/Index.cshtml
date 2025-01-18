@@ -1,30 +1,38 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="container main-wrapper">
-    <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="search-section">
+<div class="container mt-4 search-section">
+    <div class="d-flex align-items-center">
+        <div class="search-bar">
+            <select>
+                <option>Cần Thơ</option>
+                <!-- Add more options if needed -->
+            </select>
+            <input type="text" placeholder="Bạn muốn đặt chỗ đến đâu">
+            <button>
+                <i class="bi bi-search"></i> Tìm kiếm
+            </button>
+        </div>
+        <div class="phone-number">
+            <i class="bi bi-telephone-fill"></i> 1900 6005
+        </div>
     </div>
+</div>
+</div>
 
-    <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    </div>
 
-    <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="main-wrapper">
+    <div class="container mt-5">
+        <div class="row align-items-center yellow-bg--banner">
+            <div class="col-md-6 image-container--banner">
+                <img src="/common/images/banner.jpg" alt="Hai Lạng Một">
+            </div>
+            <div class="col-md-6 content--banner">
+                <h2 class="fw-bold">Hai Lạng Một - Cần Thơ</h2>
+                <p>Nhà hàng BBQ ngon, nổi tiếng tại Cần Thơ, kết hợp tinh hoa ẩm thực Trung, Nhật, Hàn.</p>
+                <button class="btn btn-custom--banner">Xem ngay</button>
+            </div>
+        </div>
     </div>
-    <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    </div>
-
-    <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    </div>
-
 </div>
