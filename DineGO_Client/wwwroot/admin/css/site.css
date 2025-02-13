@@ -1,30 +1,89 @@
-﻿body {
+﻿/* Thanh_Start_Css */
+/* Begin Admin layout */
+body {
   background-color: #f8f9fa;
 }
+
 .sidebar {
   background-color: #d02028;
   color: white;
-  height: 100vh;
 }
+
 .sidebar .nav-link {
   color: white;
 }
+
 .sidebar .nav-link.active {
   background-color: #e53935;
 }
+
 .header {
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .header .nav-link {
   color: #6c757d;
 }
+
 .header .nav-link:hover {
   color: #495057;
 }
+
 .header .badge {
   position: absolute;
   top: 0;
   right: 0;
   transform: translate(50%, -50%);
 }
+
+/* End Admin layout */
+
+
+/* Login Admin */
+.body-login {
+  background: linear-gradient(to right, #ff512f, #f09819);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background: rgba(237, 126, 52, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.login-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.form-control {
+  background: #f09819;
+  border: none;
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #fff;
+}
+
+.btn-login {
+  background: #1b1712;
+  border: none;
+}
+
+/* End Login Admin */
+/* Thanh_End_Css */
