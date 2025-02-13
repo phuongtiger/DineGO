@@ -17,6 +17,7 @@ namespace DineGO_Client.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
         public IActionResult Login()
         {
             return View("Login");
@@ -25,6 +26,16 @@ namespace DineGO_Client.Controllers
         public IActionResult Register()
         {
             return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(string username, string password)
+        {
+            if (username == "admin" && password == "password")
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            return View("Login");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

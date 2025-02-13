@@ -8,12 +8,13 @@
 :root {
   --primary-color: #C0392B;
   --secondary-color: #eeeeee;
-  --third-color: white;
-
+  --third-color: #d02028;
+  --white-color: white;
+  --black-color: black;
+  --yellow-color: #FFD700;
+  --light-gray-color: #f9f9f9;
+  --gray-color: #ddd;
 }
-
-@media (max-width: 991px) {}
-
 
 html,
 body {
@@ -33,16 +34,21 @@ body {
   margin-bottom: 100px;
 }
 
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
 .navbar {
-  color: var(--third-color);
+  color: var(--black-color);
 }
 
 .navbar .nav-link,
 .navbar .navbar-brand,
 .navbar .btn {
-  color: var(--third-color);
+  color: var(--black-color);
   font-size: 14px;
-  font-weight: bold;
 }
 
 .nav-link {
@@ -51,11 +57,10 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--primary-color);
-  background-color: var(--third-color);
+  color: var(--white-color);
+  background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
-  border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 
 .login-section {
@@ -67,52 +72,53 @@ body {
 .footer-wrapper {
   max-width: 100%;
   padding: 0 90px;
-  background-color: var(--primary-color);
-}
-
-.footer {
-  background-color: var(--primary-color);
-  color: var(--third-color);
+  background-color: var(--white-color);
+  justify-content: space-around;
 }
 
 
 
 /* Login CSS - phuonghh - START*/
-#terms{
+#terms {
   width: 10px;
   height: 15px;
 }
-.form-check-label{
+
+.form-check-label {
   align-content: center;
   padding-left: 5px;
 }
 
 .register-background,
-.login-background{
+.login-background {
   background-color: var(--secondary-color);
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .register-container,
-.login-container{
+.login-container {
   display: flex;
   width: 852px;
   height: 400px;
   background-color: white;
 }
-.register-container{
+
+.register-container {
   height: 590px;
 }
+
 .register-block,
-.login-block{
+.login-block {
   width: 70%;
   margin: auto;
   align-content: center;
 }
+
 .register-block button,
-.login-block button{
+.login-block button {
   width: 100%;
   border-radius: 0px;
   border: none;
@@ -121,12 +127,14 @@ body {
   margin-top: 10px;
   padding: 10px 0;
 }
+
 .register-block button:hover,
-.login-block button:hover{
+.login-block button:hover {
   background-color: var(--primary-color);
 }
+
 .register-block input,
-.login-block input{
+.login-block input {
   height: auto;
   color: #222;
   padding: 17px 20px;
@@ -134,20 +142,21 @@ body {
   margin: 20px 0;
   width: 100%;
 }
+
 .register-block input:focus,
 .login-block input:focus {
   outline: none;
-  border: 1px solid #007BFF; 
+  border: 1px solid #007BFF;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
+
 .register-footer,
-.login-footer{
+.login-footer {
   padding: 10px 0;
 }
 
 .register-footer a,
-.login-footer a{
-  color: var(--primary-color);
+.login-footer a {
   text-decoration: none;
   margin: 20px 0;
 }
@@ -156,13 +165,105 @@ body {
 .footer p,
 .footer h5,
 .footer li {
-  color: var(--third-color);
   margin: 0;
 }
 
 /* van khoi --main  */
 .main-wrapper {
   margin-top: 100px;
+  padding: 0 140px;
+}
+/* van khoi -tim kiem  */
+.search-section{
+  margin-top: 70px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gray-color);
+  border-radius: 5px;
+  background-color: var(--light-gray-color);
+  padding: 5px;
+  width: 100%;
+}
+.search-bar select,
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.search-bar select {
+  width: auto;
+  padding: 5px;
+  font-size: 14px;
+}
+.search-bar input {
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 14px;
+}
+.search-bar button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 5px 15px;
+  border-radius: 3px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.search-bar button:hover {
+  background-color: var(--primary-color);
+}
+.phone-number {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* van khoi -banner  */
+.yellow-bg--banner {
+  background-color: var(--yellow-color);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.image-container--banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-container--banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.content--banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-custom--banner {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-custom--banner:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 
 
