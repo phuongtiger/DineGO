@@ -21,6 +21,7 @@ body {
   height: 100%;
 }
 
+/* ------------VanKhoi_Start_Css----------- */
 /* van khoi --header css  */
 .header-wrapper {
   max-width: 100%;
@@ -76,6 +77,107 @@ body {
   justify-content: space-around;
 }
 
+/* van khoi -tim kiem  */
+.search-section {
+  margin-top: 70px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gray-color);
+  border-radius: 5px;
+  background-color: var(--light-gray-color);
+  padding: 5px;
+  width: 100%;
+}
+
+.search-bar select,
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.search-bar select {
+  width: auto;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.search-bar button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 5px 15px;
+  border-radius: 3px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-bar button:hover {
+  background-color: var(--primary-color);
+}
+
+.phone-number {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* van khoi -banner  */
+.yellow-bg--banner {
+  background-color: var(--yellow-color);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.image-container--banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-container--banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.content--banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-custom--banner {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-custom--banner:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+/* ------------VanKhoi_End_Css----------- */
 
 
 /* Login CSS - phuonghh - START*/
@@ -166,102 +268,4 @@ body {
 .footer h5,
 .footer li {
   margin: 0;
-}
-
-/* van khoi --main  */
-.main-wrapper {
-  margin-top: 100px;
-  padding: 0 140px;
-}
-/* van khoi -tim kiem  */
-.search-section{
-  margin-top: 70px;
-}
-.search-bar {
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--gray-color);
-  border-radius: 5px;
-  background-color: var(--light-gray-color);
-  padding: 5px;
-  width: 100%;
-}
-.search-bar select,
-.search-bar input {
-  border: none;
-  outline: none;
-  background: transparent;
-}
-.search-bar select {
-  width: auto;
-  padding: 5px;
-  font-size: 14px;
-}
-.search-bar input {
-  flex-grow: 1;
-  padding: 5px;
-  font-size: 14px;
-}
-.search-bar button {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  border: none;
-  padding: 5px 15px;
-  border-radius: 3px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.search-bar button:hover {
-  background-color: var(--primary-color);
-}
-.phone-number {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 14px;
-  color: var(--primary-color);
-  font-weight: bold;
-  margin-left: 10px;
-}
-
-/* van khoi -banner  */
-.yellow-bg--banner {
-  background-color: var(--yellow-color);
-  padding: 2rem;
-  border-radius: 10px;
-}
-
-.image-container--banner {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.image-container--banner img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.content--banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.btn-custom--banner {
-  background-color: var(--white-color);
-  color: var(--black-color);
-  font-weight: bold;
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
-  border: none;
-  transition: 0.3s;
-}
-
-.btn-custom--banner:hover {
-  background-color: var(--black-color);
-  color: var(--white-color);
 }
