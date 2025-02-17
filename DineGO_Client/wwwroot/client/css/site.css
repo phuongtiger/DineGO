@@ -1,71 +1,164 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿* {
+  margin: 0;
+  padding: 0;
+  text-shadow: none;
+  box-sizing: border-box;
 }
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+:root {
+  --primary-color: #C0392B;
+  --secondary-color: #eeeeee;
+  --third-color: #d02028;
+  --white-color: white;
+  --black-color: black
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+html,
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  height: 100%;
 }
+
+/* van khoi --header css  */
+.header-wrapper {
+  max-width: 100%;
+  padding: 0 90px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  position: fixed;
+  margin-bottom: 100px;
+}
+
+.navbar {
+  color: var(--white-color);
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .btn {
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav-link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.login-section {
+  margin: 0px 40px;
+}
+
+
+/* van khoi --footer  */
+.footer-wrapper {
+  max-width: 100%;
+  padding: 0 90px;
+  background-color: var(--primary-color);
+}
+
 .footer {
-  position: absolute;
-  bottom: 0;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+
+
+/* Login CSS - phuonghh - START*/
+#terms{
+  width: 10px;
+  height: 15px;
+}
+.form-check-label{
+  align-content: center;
+  padding-left: 5px;
+}
+
+.register-background,
+.login-background{
+  background-color: var(--secondary-color);
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-container,
+.login-container{
+  display: flex;
+  width: 852px;
+  height: 400px;
+  background-color: white;
+}
+.register-container{
+  height: 590px;
+}
+.register-block,
+.login-block{
+  width: 70%;
+  margin: auto;
+  align-content: center;
+}
+.register-block button,
+.login-block button{
   width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+  border-radius: 0px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+.register-block button:hover,
+.login-block button:hover{
+  background-color: var(--primary-color);
+}
+.register-block input,
+.login-block input{
+  height: auto;
+  color: #222;
+  padding: 17px 20px;
+  border: 1px solid var(--secondary-color);
+  margin: 20px 0;
+  width: 100%;
+}
+.register-block input:focus,
+.login-block input:focus {
+  outline: none;
+  border: 1px solid #007BFF; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.register-footer,
+.login-footer{
+  padding: 10px 0;
+}
+
+.register-footer a,
+.login-footer a{
+  color: var(--primary-color);
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+/* Login CSS - phuonghh - END */
+.footer p,
+.footer h5,
+.footer li {
+  color: var(--white-color);
+  margin: 0;
+}
+
+/* van khoi --main  */
+.main-wrapper {
+  margin-top: 100px;
 }
