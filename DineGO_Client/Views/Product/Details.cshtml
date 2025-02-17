@@ -1,41 +1,17 @@
 @{
     ViewData["Title"] = "Details";
 }
-     <style>
-        .container {
-            display: inline-flexbox;
-            justify-content: center;
-            align-items: center;
-            @* flex-wrap: wrap; *@
-            margin-bottom: 20px;
-        }
-        .carousel-container, .info-container {
-            flex: 1;
-            max-width: 50%;
-            padding: 20px;
-        }
-        .carousel img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 10px;    
-        }
-        .booking-container {
-            padding-left: 200px;
-        }
-     </style>
-
     <div class="container mt-4">
         <div id="restaurantCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="~/client/images/th.jpeg" class="d-block w-100" alt="Hình ảnh 1">
+                    <img src="~/client/images/res1.jpeg" class="d-block w-100" alt="Hình ảnh 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="~/client/images/th.jpeg" class="d-block w-100" alt="Hình ảnh 2">
+                    <img src="~/client/images/res1.jpeg" class="d-block w-100" alt="Hình ảnh 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="~/client/images/th.jpeg" class="d-block w-100" alt="Hình ảnh 3">
+                    <img src="~/client/images/res1.jpeg" class="d-block w-100" alt="Hình ảnh 3">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="prev">
@@ -50,7 +26,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 info-container">
-                    <h1 class="restaurant-name"><strong>Hoàng Yến Buffet Premier</strong></h1>
+                    <h1 class="restaurant-name">Hoàng Yến Buffet Premier</h1>
                     <p class="restaurant-address">202 Hoàng Văn Thụ, Tầng 1, Tân Sơn Nhất</p>
                     <div class="restaurant-info"><span class="rating">⭐⭐⭐⭐☆</span>
                     <span class="price">$100.000-$2.000.000</span>

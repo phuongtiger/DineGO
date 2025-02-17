@@ -543,6 +543,7 @@ input[type="range"]::-moz-range-thumb{
 
 
 /* Product Details - Start - Thang */
+
 .container {
   display: inline-flexbox;
   justify-content: center;
