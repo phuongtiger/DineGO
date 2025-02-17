@@ -10,7 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
-
+using Core.Common;
+using Core.Services;
+using Microsoft.Extensions.Options;
 namespace DineGO_Client
 {
     public class Startup
@@ -25,6 +27,18 @@ namespace DineGO_Client
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDistributedMemoryCache();
+            services.Configure<ApiSettings>(Configuration.GetSection("ApiSettings"));
+            services.AddSingleton(resolver =>
+                resolver.GetRequiredService<IOptions<ApiSettings>>().Value);
+            services.AddHttpClient<ApiService>();
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30); // Session timeout sau 30 phút
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+            services.AddHttpContextAccessor();
             services.AddControllersWithViews();
         }
 
@@ -61,7 +75,7 @@ namespace DineGO_Client
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseSession();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

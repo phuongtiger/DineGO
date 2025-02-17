@@ -5,7 +5,7 @@
     <div class="login-container">
         <div class="login-block">
             <h4 class="login-header text-center">ĐĂNG NHẬP VÀO DINEGO</h4>
-            <form asp-controller="Authentication" asp-action="Login" method="post">
+            <form asp-controller="Auth" asp-action="Login" method="post">
                 <div class="form-group">
                     <input type="text" id="username" name="username" required placeholder="Tài Khoản"/>
                 </div>
@@ -14,10 +14,10 @@
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
                 <div class="login-footer">
-                    <a href="/Authentication/ForgotPassword">Quên mật khẩu</a>
+                    <a href="/Auth/ForgotPassword">Quên mật khẩu</a>
                 </div>
                 <div class="login-footer text-center">
-                    Chưa có tài khoản? <a asp-controller="Authentication" asp-action="Register"><strong>Đăng ký tài khoản ngay</strong></a>
+                    Chưa có tài khoản? <a asp-controller="Auth" asp-action="Register"><strong>Đăng ký tài khoản ngay</strong></a>
                 </div>
             </form>
         </div>

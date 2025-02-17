@@ -37,6 +37,15 @@ namespace DineGO_Api
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DineGO_Api", Version = "v1" });
             });
             services.AddSingleton<TokenService>();
+            // Added: Đăng ký Distributed Memory Cache cho session
+            services.AddDistributedMemoryCache();
+            // Added: Đăng ký Session
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = System.TimeSpan.FromMinutes(30); // Session timeout sau 30 phút
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
@@ -53,6 +62,7 @@ namespace DineGO_Api
                     };
                 });
             services.AddAuthorization();
+            services.AddHttpContextAccessor();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -68,7 +78,7 @@ namespace DineGO_Api
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseSession();
             app.UseAuthentication();
             app.UseAuthorization();
 
