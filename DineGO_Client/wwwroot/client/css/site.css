@@ -77,19 +77,19 @@ body {
   justify-content: space-around;
 }
 
-/* van khoi -tim kiem  */
 .search-section {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .search-bar {
   display: flex;
   align-items: center;
-  border: 1px solid var(--gray-color);
+  border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: var(--light-gray-color);
+  background-color: #f8f9fa;
   padding: 5px;
   width: 100%;
+  margin-top: 50px;
 }
 
 .search-bar select,
@@ -112,8 +112,8 @@ body {
 }
 
 .search-bar button {
-  background-color: var(--primary-color);
-  color: var(--white-color);
+  background-color: #007bff;
+  color: #fff;
   border: none;
   padding: 5px 15px;
   border-radius: 3px;
@@ -123,30 +123,20 @@ body {
   gap: 5px;
 }
 
-.search-bar button:hover {
-  background-color: var(--primary-color);
-}
-
 .phone-number {
   display: flex;
   align-items: center;
   gap: 5px;
   font-size: 14px;
-  color: var(--primary-color);
+  color: #007bff;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-top: 50px;
 }
 
-/* van khoi -banner  */
 .yellow-bg--banner {
   background-color: var(--yellow-color);
   padding: 2rem;
-  border-radius: 10px;
-}
-
-.image-container--banner {
-  position: relative;
-  overflow: hidden;
   border-radius: 10px;
 }
 
@@ -156,15 +146,9 @@ body {
   border-radius: 10px;
 }
 
-.content--banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .btn-custom--banner {
-  background-color: var(--white-color);
-  color: var(--black-color);
+  background-color: #fff;
+  color: #000;
   font-weight: bold;
   border-radius: 20px;
   padding: 0.5rem 1rem;
@@ -173,8 +157,25 @@ body {
 }
 
 .btn-custom--banner:hover {
-  background-color: var(--black-color);
-  color: var(--white-color);
+  background-color: #000;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    flex-grow: 1;
+  }
+
+  .search-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .phone-number {
+    justify-content: center;
+  }
 }
 
 /* ------------VanKhoi_End_Css----------- */
@@ -275,10 +276,12 @@ body {
   margin-top: 100px;
   padding: 0 140px;
 }
+
 /* van khoi -tim kiem  */
-.search-section{
+.search-section {
   margin-top: 70px;
 }
+
 .search-bar {
   display: flex;
   align-items: center;
@@ -288,22 +291,26 @@ body {
   padding: 5px;
   width: 100%;
 }
+
 .search-bar select,
 .search-bar input {
   border: none;
   outline: none;
   background: transparent;
 }
+
 .search-bar select {
   width: auto;
   padding: 5px;
   font-size: 14px;
 }
+
 .search-bar input {
   flex-grow: 1;
   padding: 5px;
   font-size: 14px;
 }
+
 .search-bar button {
   background-color: var(--primary-color);
   color: var(--white-color);
@@ -315,9 +322,11 @@ body {
   align-items: center;
   gap: 5px;
 }
+
 .search-bar button:hover {
   background-color: var(--primary-color);
 }
+
 .phone-number {
   display: flex;
   align-items: center;
@@ -367,6 +376,7 @@ body {
   background-color: var(--black-color);
   color: var(--white-color);
 }
+
 /* Sieu Blog css _Start */
 .carousel-card img {
   width: 100%;
@@ -473,7 +483,8 @@ h3 {
   align-items: center;
   margin: 10px 0;
   font-size: 18px;
-  color: #f39c12; /* Màu vàng cho sao */
+  color: #f39c12;
+  /* Màu vàng cho sao */
 }
 
 .rating .star {
@@ -487,6 +498,7 @@ h3 {
 }
 
 .all-container {
-  margin-top: 15px ;
+  margin-top: 15px;
 }
+
 /* sieu Blog css _end */
