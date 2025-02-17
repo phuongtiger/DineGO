@@ -21,165 +21,6 @@ body {
   height: 100%;
 }
 
-/* ------------VanKhoi_Start_Css----------- */
-/* van khoi --header css  */
-.header-wrapper {
-  max-width: 100%;
-  padding: 0 90px;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  background-color: var(--white-color);
-  color: var(--black-color);
-  position: fixed;
-  margin-bottom: 100px;
-}
-
-.logo-text {
-  font-size: 20px;
-  font-weight: bold;
-  color: var(--primary-color);
-}
-
-.navbar {
-  color: var(--black-color);
-}
-
-.navbar .nav-link,
-.navbar .navbar-brand,
-.navbar .btn {
-  color: var(--black-color);
-  font-size: 14px;
-}
-
-.nav-link {
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.nav-link:hover {
-  color: var(--white-color);
-  background-color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  padding: 10px 30px;
-}
-
-.login-section {
-  margin: 0px 40px;
-}
-
-
-/* van khoi --footer  */
-.footer-wrapper {
-  max-width: 100%;
-  padding: 0 90px;
-  background-color: var(--white-color);
-  justify-content: space-around;
-}
-
-.search-section {
-  margin-top: 50px;
-}
-
-.search-bar {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f8f9fa;
-  padding: 5px;
-  width: 100%;
-  margin-top: 50px;
-}
-
-.search-bar select,
-.search-bar input {
-  border: none;
-  outline: none;
-  background: transparent;
-}
-
-.search-bar select {
-  width: auto;
-  padding: 5px;
-  font-size: 14px;
-}
-
-.search-bar input {
-  flex-grow: 1;
-  padding: 5px;
-  font-size: 14px;
-}
-
-.search-bar button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 5px 15px;
-  border-radius: 3px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.phone-number {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 14px;
-  color: #007bff;
-  font-weight: bold;
-  margin-left: 20px;
-  margin-top: 50px;
-}
-
-.yellow-bg--banner {
-  background-color: var(--yellow-color);
-  padding: 2rem;
-  border-radius: 10px;
-}
-
-.image-container--banner img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.btn-custom--banner {
-  background-color: #fff;
-  color: #000;
-  font-weight: bold;
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
-  border: none;
-  transition: 0.3s;
-}
-
-.btn-custom--banner:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  .search-bar {
-    flex-grow: 1;
-  }
-
-  .search-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-  }
-  .phone-number {
-    justify-content: center;
-  }
-}
-
-/* ------------VanKhoi_End_Css----------- */
-
 
 /* Login CSS - phuonghh - START*/
 #terms {
@@ -269,112 +110,6 @@ body {
 .footer h5,
 .footer li {
   margin: 0;
-}
-
-/* van khoi --main  */
-.main-wrapper {
-  margin-top: 100px;
-  padding: 0 140px;
-}
-
-/* van khoi -tim kiem  */
-.search-section {
-  margin-top: 70px;
-}
-
-.search-bar {
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--gray-color);
-  border-radius: 5px;
-  background-color: var(--light-gray-color);
-  padding: 5px;
-  width: 100%;
-}
-
-.search-bar select,
-.search-bar input {
-  border: none;
-  outline: none;
-  background: transparent;
-}
-
-.search-bar select {
-  width: auto;
-  padding: 5px;
-  font-size: 14px;
-}
-
-.search-bar input {
-  flex-grow: 1;
-  padding: 5px;
-  font-size: 14px;
-}
-
-.search-bar button {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  border: none;
-  padding: 5px 15px;
-  border-radius: 3px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.search-bar button:hover {
-  background-color: var(--primary-color);
-}
-
-.phone-number {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 14px;
-  color: var(--primary-color);
-  font-weight: bold;
-  margin-left: 10px;
-}
-
-/* van khoi -banner  */
-.yellow-bg--banner {
-  background-color: var(--yellow-color);
-  padding: 2rem;
-  border-radius: 10px;
-}
-
-.image-container--banner {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.image-container--banner img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.content--banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.btn-custom--banner {
-  background-color: var(--white-color);
-  color: var(--black-color);
-  font-weight: bold;
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
-  border: none;
-  transition: 0.3s;
-}
-
-.btn-custom--banner:hover {
-  background-color: var(--black-color);
-  color: var(--white-color);
 }
 
 /* Sieu Blog css _Start */
@@ -502,3 +237,168 @@ h3 {
 }
 
 /* sieu Blog css _end */
+
+
+
+
+
+
+/* ------------VanKhoi_Start_Css----------- */
+/* van khoi --header css  */
+.header-wrapper {
+  max-width: 100%;
+  padding: 0 90px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  position: fixed;
+  margin-bottom: 100px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navbar {
+  color: var(--black-color);
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .btn {
+  color: var(--black-color);
+  font-size: 14px;
+}
+
+.nav-link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 10px 30px;
+}
+
+.login-section {
+  margin: 0px 40px;
+}
+
+
+/* van khoi --footer  */
+.footer-wrapper {
+  max-width: 100%;
+  padding: 0 90px;
+  background-color: var(--white-color);
+  justify-content: space-around;
+}
+
+.search-section {
+  margin-top: 50px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  padding: 5px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.search-bar select,
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.search-bar select {
+  width: auto;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.search-bar button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 3px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.phone-number {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.yellow-bg--banner {
+  background-color: var(--yellow-color);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.image-container--banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-custom--banner {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-custom--banner:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    flex-grow: 1;
+  }
+
+  .search-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .phone-number {
+    justify-content: center;
+  }
+}
+
+/* ------------VanKhoi_End_Css----------- */
