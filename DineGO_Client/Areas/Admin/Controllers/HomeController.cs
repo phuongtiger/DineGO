@@ -9,5 +9,9 @@ namespace DineGO_Client.Areas.Admin.Controllers
         {
             return View();
         }
+         public IActionResult Login()
+        {
+            return View();
+        }
     }
 }
