@@ -29,9 +29,9 @@ body {
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: var(--white-color);
-  color: var(--black-color);
-  position: fixed;
+  background-color: var(--primary-color);
+  color: var(--third-color);
+  position: auto;
   margin-bottom: 100px;
 }
 
@@ -377,6 +377,495 @@ body {
   color: var(--white-color);
 }
 
+/* ------------VanKhoi_End_Css----------- */
+
+
+/* Login CSS - phuonghh - START*/
+#terms {
+  width: 10px;
+  height: 15px;
+}
+
+.form-check-label {
+  align-content: center;
+  padding-left: 5px;
+}
+
+.register-background,
+.login-background {
+  background-color: var(--secondary-color);
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-container,
+.login-container {
+  display: flex;
+  width: 852px;
+  height: 400px;
+  background-color: white;
+}
+
+.register-container {
+  height: 590px;
+}
+
+.register-block,
+.login-block {
+  width: 70%;
+  margin: auto;
+  align-content: center;
+}
+
+.register-block button,
+.login-block button {
+  width: 100%;
+  border-radius: 0px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+.register-block button:hover,
+.login-block button:hover {
+  background-color: var(--primary-color);
+}
+
+.register-block input,
+.login-block input {
+  height: auto;
+  color: #222;
+  padding: 17px 20px;
+  border: 1px solid var(--secondary-color);
+  margin: 20px 0;
+  width: 100%;
+}
+
+.register-block input:focus,
+.login-block input:focus {
+  outline: none;
+  border: 1px solid #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.register-footer,
+.login-footer {
+  padding: 10px 0;
+}
+
+.register-footer a,
+.login-footer a {
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+/* Login CSS - phuonghh - END */
+.footer p,
+.footer h5,
+.footer li {
+  margin: 0;
+}
+
+/* van khoi --main  */
+.main-wrapper {
+  margin-top: 100px;
+  padding: 0 140px;
+}
+/* van khoi -tim kiem  */
+.search-section{
+  margin-top: 70px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gray-color);
+  border-radius: 5px;
+  background-color: var(--light-gray-color);
+  padding: 5px;
+  width: 100%;
+}
+.search-bar select,
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.search-bar select {
+  width: auto;
+  padding: 5px;
+  font-size: 14px;
+}
+.search-bar input {
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 14px;
+}
+.search-bar button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 5px 15px;
+  border-radius: 3px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.search-bar button:hover {
+  background-color: var(--primary-color);
+}
+.phone-number {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* van khoi -banner  */
+.yellow-bg--banner {
+  background-color: var(--yellow-color);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.image-container--banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-container--banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.content--banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-custom--banner {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-custom--banner:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+
+
+/* Product - Thang _ START */
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.restaurant-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.restaurant-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.restaurant-content {
+  padding: 15px;
+}
+
+.restaurant-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.restaurant-address {
+  font-size: 14px;
+  color: #777;
+  margin: 10px 0;
+}
+
+.restaurant-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.rating {
+  color: #f39c12;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 14px;
+  color: #27ae60;
+}
+
+.restaurant-type {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.btn-book {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.btn-book:hover {
+  background-color: #c0392b;
+}
+
+/* ----------------------------------------- */
+
+/* Vùng chứa */
+.main {
+  display: flex;
+  justify-content: space-between; /* Đưa các phần tử về hai phía trái và phải */
+  align-items: center; 
+}
+
+.region-selector {
+  position: relative; /* Quan hệ tương đối cho vùng selector */
+  display: inline-block;
+  margin-left: 120px;
+  width: 200px;
+}
+
+/* Nút hiển thị */
+.region-display {
+  background-color: #c0392b;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho nút */
+.region-display:hover {
+  background-color: #a83226;
+}
+
+/* Danh sách khu vực (ban đầu ẩn đi) */
+.region-options {
+  display: none;
+  position: absolute;
+  top: 100%; /* Đặt dưới nút */
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* Hiển thị danh sách khi hover vào nút */
+.region-selector:hover .region-options {
+  display: block;
+}
+
+/* Radio ẩn */
+input[type="radio"] {
+  display: none;
+}
+
+/* Nhãn các khu vực */
+.region-option {
+  display: block;
+  padding: 10px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hiệu ứng hover cho nhãn */
+.region-option:hover {
+  background-color: #c0392b;
+  color: white;
+}
+
+/* Khi radio được chọn */
+input[type="radio"]:checked + .region-option {
+  background-color: #c0392b;
+  color: white;
+}
+
+
+/* Search */
+.search-input{
+  width: 130%;
+  height: 50px;
+  outline: none;
+  font-size: 19px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #999;
+  -moz-appearance: textfield;
+}
+
+
+/* Price range */
+.wrapper{
+  margin-right: 120px;
+}
+
+.price-input{
+  width: 300px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.price-input .field{
+  display: flex;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+}
+.field input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 19px;
+  margin-left: 12px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #999;
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.price-input .separator{
+  width: 50px;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+}
+.slider{
+  height: 5px;
+  position: relative;
+  background: #ddd;
+  border-radius: 5px;
+}
+.slider .progress{
+  height: 100%;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  border-radius: 5px;
+  background: #17A2B8;
+}
+.range-input{
+  position: relative;
+}
+.range-input input{
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb{
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: #17A2B8;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+input[type="range"]::-moz-range-thumb{
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: #17A2B8;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+/* Product - END - Thang  */
+
+
+/* Product Details - Start - Thang */
+.container {
+  display: inline-flexbox;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.carousel-container, .info-container {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+}
+.carousel img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;    
+}
+.booking-container {
+  padding-left: 200px;
+}
+/* Product Details - End - Thang */
 /* Sieu Blog css _Start */
 .carousel-card img {
   width: 100%;
