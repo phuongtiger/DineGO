@@ -10,7 +10,7 @@ namespace DineGO_Client.Controllers
 {
     public class BlogController : Controller
     {
-        public IActionResult ViewBlog()
+        public IActionResult Index()
         {
             return View();
         }
