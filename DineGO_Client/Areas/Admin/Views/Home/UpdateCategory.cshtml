@@ -1,0 +1,25 @@
+@{
+    Layout = "../../Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "UpdateCategory";
+}
+
+<form action="" method="POST">
+    <div class="mb-3">
+        <label for="category-id" class="form-label">Category ID</label>
+        <input type="text" class="form-control" id="category-id" name="category-id" value="1" readonly>
+    </div>
+
+    <div class="mb-3">
+        <label for="category-type" class="form-label">Type</label>
+        <input type="text" class="form-control" id="category-type" name="type" value="Type 1aaaaaaa">
+    </div>
+
+    <div class="mb-3">
+        <label for="category-description" class="form-label">Description</label>
+        <textarea class="form-control" id="category-description" name="description" rows="3">People often think that eating at home is healthier. I completely agreed with this point of view until I visited Rutass restaurant. When I started college, cooking took up a lot of my time. When the wonderful time comes to go, I realized that Rutass is the best restaurant I have ever known.</textarea>
+    </div>
+    <div class="d-flex justify-content-between">
+        <button type="submit" class="btn btn-primary">Update Category</button>
+        <a href="javascript:history.back()" class="btn btn-secondary">Back</a>
+    </div>
+</form>

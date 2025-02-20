@@ -1,0 +1,35 @@
+@{
+    Layout = "../../Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "AddBlog";
+}
+
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center mb-4">Add Blog</h2>
+        <form>
+            <div class="form-group">
+                <label for="blogId">Blog ID</label>
+                <input type="text" class="form-control" id="blogId" placeholder="Enter blog ID">
+            </div>
+            <div class="form-group">
+                <label for="blogTitle">Blog title</label>
+                <input type="text" class="form-control" id="blogTitle" placeholder="Enter blog title">
+            </div>
+                <div class="form-group">
+                <label for="blogImage">Image</label>
+                <input type="file" class="form-control-file" id="blogImage">
+            </div>   
+            <div class="form-group">
+                <label for="date">Date and Time</label>
+                <input type="datetime-local" class="form-control" id="date">
+            </div>         
+            <div class="form-group">
+                <label for="blogInfo">Information</label>
+                <textarea class="form-control" id="restaurantInfo" rows="3" placeholder="Enter restaurant information"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Add Blog</button>          
+            <a href="javascript:history.back()" class="btn btn-secondary btn-block mb-3">Back</a>          
+        </form>
+    </div>
+</div>

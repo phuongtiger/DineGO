@@ -1,0 +1,66 @@
+@{ 
+    Layout = "../../Views/Shared/_Layout.cshtml";
+    ViewData["Title"] =  "AddRestaurant";
+}
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center mb-4">Add Restaurant</h2>
+        <form>
+            <div class="form-group">
+                <label for="restaurantId">Restaurant ID</label>
+                <input type="text" class="form-control" id="restaurantId" placeholder="Enter restaurant ID">
+            </div>
+            <div class="form-group">
+                <label for="restaurantName">Restaurant Name</label>
+                <input type="text" class="form-control" id="restaurantName" placeholder="Enter restaurant name">
+            </div>
+            <div class="form-group">
+                <label for="restaurantType">Type</label>
+                <select class="form-control" id="restaurantType">
+                    <option value="">Select restaurant type</option>
+                    <option value="fast_food">Fast Food</option>
+                    <option value="fine_dining">Fine Dining</option>
+                    <option value="casual_dining">Casual Dining</option>
+                    <option value="cafe">Cafe</option>
+                    <option value="buffet">Buffet</option>
+                    <option value="street_food">Street Food</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="restaurantPrice">Price</label>
+                <input type="text" class="form-control" id="restaurantPrice" placeholder="Enter price range">
+            </div>
+            <div class="form-group">
+                <label for="restaurantDiscount">Discount</label>
+                <input type="text" class="form-control" id="restaurantDiscount" placeholder="Enter discount">
+            </div>
+            <div class="form-group">
+                <label for="restaurantTime">Time</label>
+                <input type="text" class="form-control" id="restaurantTime" placeholder="Enter opening hours">
+            </div>
+            <div class="form-group">
+                <label for="restaurantPhone">Phone</label>
+                <input type="text" class="form-control" id="restaurantPhone" placeholder="Enter phone number">
+            </div>
+            <div class="form-group">
+                <label for="restaurantRate">Rate</label>
+                <input type="text" class="form-control" id="restaurantRate" placeholder="Enter rating">
+            </div>
+            <div class="form-group">
+                <label for="restaurantAddress">Address</label>
+                <input type="text" class="form-control" id="restaurantAddress" placeholder="Enter address">
+            </div>
+            <div class="form-group">
+                <label for="restaurantImage">Image</label>
+                <input type="file" class="form-control-file" id="restaurantImage">
+            </div>
+            <div class="form-group">
+                <label for="restaurantInfo">Information</label>
+                <textarea class="form-control" id="restaurantInfo" rows="3" placeholder="Enter restaurant information"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Add Restaurant</button>          
+            <a href="javascript:history.back()" class="btn btn-secondary btn-block mb-3">Back</a>          
+        </form>
+    </div>
+</div>
+

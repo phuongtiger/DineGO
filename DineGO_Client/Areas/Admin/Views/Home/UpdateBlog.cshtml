@@ -1,0 +1,29 @@
+@{
+    Layout = "../../Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "UpdateBlog";
+}
+
+<form action="" method="POST">
+    <div class="mb-3">
+        <label for="blog-id" class="form-label">Blog ID</label>
+        <input type="text" class="form-control" id="blog-id" name="blog-id" value="B001" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="blog-date" class="form-label">Date</label>
+        <input type="date" class="form-control" id="blog-date" name="date" value="2025-02-19">
+    </div>
+    <div class="mb-3">
+        <label for="blog-image" class="form-label">Image</label>
+        <input type="file" class="form-control" id="blog-image" name="image">
+        <small class="form-text text-muted">Leave empty if you don't want to change the image.</small>
+    </div>
+    <div class="mb-3">
+        <label for="blog-info" class="form-label">Information</label>
+        <textarea class="form-control" id="blog-info" name="information"
+            rows="4">A fascinating article about the latest trends in technology and their impact on society.</textarea>
+    </div>
+    <div class="d-flex justify-content-between">
+        <button type="submit" class="btn btn-primary">Update Blog</button>
+        <a href="javascript:history.back()" class="btn btn-secondary">Back</a>
+    </div>
+</form>

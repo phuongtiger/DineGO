@@ -1,0 +1,62 @@
+@{
+    Layout = "../../Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "UpdateCustomer";
+}
+
+<form action="" method="POST">
+    <div class="mb-3">
+        <label for="customer-id" class="form-label">Customer ID</label>
+        <input type="text" class="form-control" id="customer-id" name="customer-id" value="C001" readonly>
+    </div>
+
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" name="username" value="john_doe">
+    </div>
+
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" value="********">
+    </div>
+
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" value="John Doe">
+    </div>
+
+    <div class="mb-3">
+        <label for="birthday" class="form-label">Birthday</label>
+        <input type="date" class="form-control" id="birthday" name="birthday" value="1990-05-15">
+    </div>
+    <div class="mb-3">
+        <label for="customer-image" class="form-label">Image</label>
+        <input type="file" class="form-control" id="customer-image" name="image">
+    </div>
+    <div class="mb-3">
+        <label for="gender" class="form-label">Gender</label>
+        <select class="form-control" id="gender" name="gender">
+            <option value="Male" selected>Male</option>
+            <option value="Female">Female</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="tel" class="form-control" id="phone" name="phone" value="+1234567890">
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" value="john.doe@example.com">
+    </div>
+
+    <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <textarea class="form-control" id="address" name="address" rows="3">123 Main St, Springfield, IL</textarea>
+    </div>
+
+    <div class="d-flex justify-content-between">
+        <button type="submit" class="btn btn-primary">Update Customer</button>
+        <a href="javascript:history.back()" class="btn btn-secondary">Back</a>
+    </div>
+</form>
