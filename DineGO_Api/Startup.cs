@@ -15,6 +15,8 @@ using Core.Services;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using DineGO_Api.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace DineGO_Api
 {
@@ -32,6 +34,10 @@ namespace DineGO_Api
         {
 
             services.AddControllers();
+            //ConnectDB
+            services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DineGO_Api", Version = "v1" });
