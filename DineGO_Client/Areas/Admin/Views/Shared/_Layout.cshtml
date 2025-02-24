@@ -1,71 +1,75 @@
 ﻿<html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - DineGO_Client</title>
-     <link rel="stylesheet" href="/common/lib/bootstrap/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/common/lib/slider/owl.carousel.min" />
-    <link rel="stylesheet" href="/common/lib/slider/owl.theme.default.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - DineGO_Admin</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/admin/css/site.css" />
 </head>
-
 <body>
     <div class="d-flex">
         <!-- Sidebar -->
         <div class="sidebar d-flex flex-column p-3">
-            <h2 class="font-weight-bold">DineGo</h2>
+            <div class="d-flex align-items-center mb-4">
+                <i class="fas fa-smile text-white fa-2x"></i>
+                <span class="ml-2 text-white h4 mb-0">DineGo<Sup>Admin</Sup></span>
+            </div>
             <nav class="nav flex-column">
-                <a class="nav-link active" href="#"><i class=""></i>DASHBOARD</a>
-                <a class="nav-link" href="#"><i class=""></i>SAMPLE 1</a>
-                <a class="nav-link" href="#"><i class=""></i>SAMPLE 2</a>
-                <a class="nav-link" href="#"><i class=""></i>SAMPLE 3</a>
-                <a class="nav-link" href="#"><i class=""></i>SAMPLE 4</a>
-                <a class="nav-link" href="#"><i class=""></i>SAMPLE 5</a>
-                <a class="nav-link" href="#"><i class=""></i>SAMPLE 6</a>
+                <a class="nav-link" href="/Admin/Home"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                <div class="mt-4">
+                    <h6 class="text-white-50">Management</h6>
+                    <a class="nav-link" href="/Admin/Restaurant/Restaurant"><i class="fas fa-utensils"></i> Restaurant</a>
+                    <a class="nav-link" href="/Admin/Category/Category"><i class="fas fa-list"></i> Category</a>
+                    <a class="nav-link" href="/Admin/Customer/Customer"><i class="fas fa-chess-king"></i>Customer</a>
+                    <a class="nav-link" href="/Admin/Reservation/Reservation"><i class="fas fa-hourglass-start"></i> Reservation</a>
+                    <a class="nav-link" href="/Admin/Blog/Blog"><i class="fas fa-newspaper"></i>Blog</a>                    
+                </div>
             </nav>
+            
         </div>
         <!-- Main Content -->
-        <div class="flex-grow-1 d-flex flex-column">
-            <!-- Header -->
-            <header class="header d-flex justify-content-between align-items-center p-3">
-                <div class="d-flex align-items-center">
-                    <h1 class="h4 mb-0">Dashboard</h1>
-
+        <div class="flex-grow-1 p-4">
+            <!-- Topbar -->
+            <div class="topbar d-flex justify-content-between align-items-center mb-4 p-3">
+                <div class="input-group w-50">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="d-flex align-items-center">
-                    @* <input type="text" class="form-control" placeholder="Search"> *@
-                    <nav class="ml-4 d-flex align-items-center">
-                        <a href="#" class="nav-link">Account</a>
-                        <div class="dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                    <div class="position-relative">
+                        <i class="fas fa-bell text-gray-500 fa-lg"></i>
+                        <span class="position-absolute top-0 right-0 bg-danger text-white rounded-circle px-1">3+</span>
+                    </div>
+                    <div class="position-relative ml-4">
+                        <i class="fas fa-envelope text-gray-500 fa-lg"></i>
+                        <span class="position-absolute top-0 right-0 bg-danger text-white rounded-circle px-1">7</span>
+                    </div>
+                    <div class="ml-4 position-relative">
+                        <img src="https://placehold.co/40x40" class="rounded-circle" alt="User profile picture" width="40" height="40">
+                        <div class="dropdown-menu dropdown-menu-right mt-2">
+                            <a class="dropdown-item" href="/Admin/Home/Profile">Profile</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">Activity Log</a>
+                            <a class="dropdown-item" href="#">Logout</a>
                         </div>
-                        <a href="#" class="nav-link">Log out</a>
-                    </nav>
+                    </div>
                 </div>
-
-            </header>
-            <!-- Main Section -->
-            @RenderBody()
-        </div>
+            </div>
+            
+        @RenderBody()
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - DineGO_Client - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
- <script src="/common/lib/jquery/jquery-3.7.1.min.js"></script>
-    <script src="/common/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="/common/lib/slider/owl.carousel.min.js"></script>
-    <script src="/admin/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Toggle user menu
+        document.querySelector('.position-relative img').addEventListener('click', function() {
+            this.nextElementSibling.classList.toggle('show');
+        });
+    </script>
 </body>
-
 </html>

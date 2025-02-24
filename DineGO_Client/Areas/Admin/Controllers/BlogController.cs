@@ -3,20 +3,26 @@ using Microsoft.AspNetCore.Mvc;
 namespace DineGO_Client.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class HomeController : Controller
+    public class BlogController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Blog()
         {
             return View();
         }
-        public IActionResult Login()
+
+        public IActionResult AddBlog()
         {
             return View();
         }
-        public IActionResult Profile()
+
+        public IActionResult UpdateBlog()
         {
             return View();
         }
-      
+
+        public IActionResult DeleteBlog()
+        {
+            return View();
+        }
     }
 }

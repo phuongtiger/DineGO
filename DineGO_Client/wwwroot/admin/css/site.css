@@ -1,40 +1,31 @@
 ﻿/* Thanh_Start_Css */
 /* Begin Admin layout */
+
 body {
-  background-color: #f8f9fa;
+  background-color: #f8f9fc;
 }
-
 .sidebar {
-  background-color: #d02028;
-  color: white;
+  background-color: #4e73df;
+  min-height: 100vh;
 }
-
 .sidebar .nav-link {
   color: white;
 }
-
-.sidebar .nav-link.active {
-  background-color: #e53935;
+.sidebar .nav-link:hover {
+  background-color: #2e59d9;
 }
-
-.header {
+.sidebar .nav-link.active {
+  background-color: #2e59d9;
+}
+.topbar {
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-.header .nav-link {
-  color: #6c757d;
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-.header .nav-link:hover {
-  color: #495057;
-}
-
-.header .badge {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(50%, -50%);
+.progress-bar {
+  background-color: #36b9cc;
 }
 
 /* End Admin layout */
@@ -70,13 +61,13 @@ body {
   color: #fff;
 }
 
-.form-control {
+.body-login .form-control {
   background: #f09819;
   border: none;
   color: #fff;
 }
 
-.form-control::placeholder {
+.body-login .form-control::placeholder {
   color: #fff;
 }
 
@@ -86,4 +77,19 @@ body {
 }
 
 /* End Login Admin */
+
+/*Begin css for table */
+
+.table td {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.table td.description {
+  max-width: 200px;
+}
+
+/* End css for table */
+
 /* Thanh_End_Css */
+

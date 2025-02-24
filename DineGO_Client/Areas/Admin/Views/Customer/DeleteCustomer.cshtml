@@ -1,0 +1,43 @@
+@{Layout = "../../Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "DeleteCustomer";
+}
+
+<form action="" method="POST">
+    <div class="mb-3">
+        <label for="customer-id" class="form-label">Customer ID</label>
+        <input type="text" class="form-control" id="customer-id" name="customer-id" value="C001" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" name="username" value="john_doe" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" value="John Doe" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="birthday" class="form-label">Birthday</label>
+        <input type="text" class="form-control" id="birthday" name="birthday" value="1990-05-15" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="gender" class="form-label">Gender</label>
+        <input type="text" class="form-control" id="gender" name="gender" value="Male" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="text" class="form-control" id="phone" name="phone" value="+1234567890" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" value="john.doe@example.com" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <textarea class="form-control" id="address" name="address" rows="3" readonly>123 Main St, Springfield, IL</textarea>
+    </div>
+
+    <div class="d-flex justify-content-between">
+        <button type="submit" class="btn btn-danger">Delete Customer</button>
+        <a href="javascript:history.back()" class="btn btn-secondary">Back</a>
+    </div>
+</form>
